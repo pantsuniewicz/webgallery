@@ -1,54 +1,62 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    padding: 0;
+    margin: 0;
 }
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* страховка */
+}
+
 .gallery {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
 }
+
 .container {
     width: 80%;
-    height: 190vh;
+    min-height: 100vh;
     background-color: pink;
     margin: auto;
 }
+
 .item {
     text-align: center;
 }
+
 .image {
+    max-width: 100%;
     height: auto;
 }
+
 .caption {
-    color:moccasin;
+    color: moccasin;
     text-align: center;
     font-size: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 .par {
     font-size: 30px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-.mopsik {
-    text-align: center;
-}
-@media screen and (max-width: 390px) {
-.container {
-    background-color: moccasin;
-}
-.gallery {
-    flex-direction: column;
-}
-.image {
-    width: 70%;
-}
-.caption {
-    color: pink;
-}
-.container {
-    height: 120vh;
-}
+
+@media screen and (max-width: 600px) {
+    .container {
+        background-color: moccasin;
+    }
+    .image {
+        width: 70%;
+    }
+    .caption {
+        color: pink;
+        font-size: 28px;
+    }
+    .par {
+        font-size: 20px;
+    }
 }

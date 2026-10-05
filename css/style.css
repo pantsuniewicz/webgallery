@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-html, body {
+body {
     max-width: 100%;
     overflow-x: hidden; /* страховка */
 }
